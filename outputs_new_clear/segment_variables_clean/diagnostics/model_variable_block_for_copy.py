@@ -1,0 +1,41 @@
+X_GROUPS = OrderedDict([
+    ("trip_state", [
+        "straight_distance_m",
+        "time_pressure_min",
+        "onhand_order_count_start",
+        "start_hour_sin",
+        "start_hour_cos",
+        "is_weekend_local",
+    ]),
+    ("rider_behavior", [
+        "rider_active_day_share_in_data",
+        "rider_avg_orders_per_active_day",
+        "rider_median_onhand_raw",
+        "rider_median_max_onhand_per_wave",
+        "rider_share_batch_wave_ge2",
+        "rider_median_segment_distance_m",
+    ]),
+    ("road_class_shares", [
+        "road_class_share_levelFourRoad_lenw_mean",
+        "road_class_share_levelThreeRoad_lenw_mean",
+        "road_class_share_secondaryRoad_lenw_mean",
+        "road_class_share_nationalRoad_lenw_mean",
+        "road_class_share_provincialRoad_lenw_mean",
+        "road_class_share_overPass_lenw_mean",
+    ]),
+    ("road_topology_geometry", [
+        "degree_mean_end_lenw_mean",
+        "betweenness_raw_mean_end_lenw_mean",
+        "closeness_approx_mean_end_lenw_mean",
+        "tortuosity_lenw_mean",
+        "curvature_deg_per_m_lenw_mean",
+        "road_len_in_300m_lenw_mean",
+        "intersection_density_per_km_300m_lenw_mean",
+    ]),
+    ("landuse", [
+        "poi_count_300m_lenw_mean",
+        "poi_mix_entropy_norm_300m_lenw_mean",
+        "poi_count_restaurant_300m_lenw_mean",
+        "restaurant_shp_count_300m_lenw_mean",
+    ]),
+])
