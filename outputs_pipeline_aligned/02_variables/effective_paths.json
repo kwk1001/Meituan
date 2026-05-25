@@ -1,0 +1,24 @@
+{
+  "segment_csv": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\01_raw_segments\\courier_final_distances_filtered.csv",
+  "graphml_path": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\00_graph\\baoding_aligned.graphml",
+  "waybill_csv": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\dataset\\all_waybill_info.csv",
+  "wave_csv": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\dataset\\courier_wave_info.csv",
+  "poi_input": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\baoding\\保定数据\\POI_保定.shp",
+  "restaurant_input": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\baoding\\保定数据\\大众点评餐馆_保定.shp",
+  "output_root": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\02_variables",
+  "network_radius_m": 300,
+  "landuse_buffer_m": 30,
+  "service_time_deduction_sec": 180,
+  "graph_fingerprint": {
+    "path": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\00_graph\\baoding_aligned.graphml",
+    "size_bytes": 140710474,
+    "mtime": 1779087627.9865012,
+    "md5": "5c39e58646ac275b40a6b104dd9c933b"
+  },
+  "segment_csv_fingerprint": {
+    "path": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\01_raw_segments\\courier_final_distances_filtered.csv",
+    "size_bytes": 371057029,
+    "mtime": 1779089373.534778,
+    "md5": "98e1c92edac80139f22fedd6dfe79e8a"
+  }
+}

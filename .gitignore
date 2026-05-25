@@ -1,5 +1,6 @@
-baoding/
+# baoding/
 cache/
-outputs_old/
-road_repair_outputs/
+codes_old/
+# road_repair_outputs/
+outputs_new_clear/
 .vscode

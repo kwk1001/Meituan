@@ -1,0 +1,45 @@
+                                 OLS Regression Results                                 
+========================================================================================
+Dep. Variable:     speed_kmh_minus_service_time   R-squared:                       0.085
+Model:                                      OLS   Adj. R-squared:                  0.085
+Method:                           Least Squares   F-statistic:                     1127.
+Date:                          Mon, 18 May 2026   Prob (F-statistic):               0.00
+Time:                                  23:13:59   Log-Likelihood:            -1.5002e+06
+No. Observations:                        437809   AIC:                         3.000e+06
+Df Residuals:                            437789   BIC:                         3.001e+06
+Df Model:                                    19                                         
+Covariance Type:                        cluster                                         
+==============================================================================================================
+                                                 coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------------------
+const                                         17.7380      0.229     77.416      0.000      17.289      18.187
+ln1p_restaurant_shp_count_30m_lenw_mean       -0.5586      0.027    -20.806      0.000      -0.611      -0.506
+onhand_order_count_start                       0.7028      0.016     43.757      0.000       0.671       0.734
+time_pressure_min                             -0.0800      0.002    -43.195      0.000      -0.084      -0.076
+is_weekend_local                               0.0421      0.030      1.407      0.159      -0.017       0.101
+time_midday_peak_10_14                        -0.2450      0.039     -6.337      0.000      -0.321      -0.169
+time_evening_peak_16_20                       -1.3014      0.038    -34.652      0.000      -1.375      -1.228
+time_midnight_2_6                              2.7789      0.165     16.862      0.000       2.456       3.102
+rider_avg_orders_per_active_day                0.0825      0.003     27.033      0.000       0.077       0.088
+div1000_rider_mean_segment_distance_m          1.7052      0.069     24.593      0.000       1.569       1.841
+road_class_share_levelThreeRoad_lenw_mean      1.6599      0.075     21.996      0.000       1.512       1.808
+road_class_share_secondaryRoad_lenw_mean       1.9177      0.081     23.789      0.000       1.760       2.076
+road_class_share_nationalRoad_lenw_mean        1.5935      0.191      8.354      0.000       1.220       1.967
+road_class_share_provincialRoad_lenw_mean      1.1180      0.131      8.539      0.000       0.861       1.375
+curvature_deg_per_m_lenw_mean                 -4.5656      0.134    -34.119      0.000      -4.828      -4.303
+intersection_density_per_km_300m_lenw_mean    -0.5019      0.014    -36.310      0.000      -0.529      -0.475
+betweenness_log1p_z_mean_end_lenw_mean         2.5915      0.048     53.789      0.000       2.497       2.686
+closeness_per_km_z_mean_end_lenw_mean         -1.8386      0.110    -16.739      0.000      -2.054      -1.623
+ln1p_poi_count_30m_lenw_mean                   0.5337      0.107      5.009      0.000       0.325       0.743
+poi_mix_entropy_norm_30m_lenw_mean             1.2910      0.740      1.744      0.081      -0.160       2.742
+==============================================================================
+Omnibus:                    18617.777   Durbin-Watson:                   1.866
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            20936.655
+Skew:                           0.531   Prob(JB):                         0.00
+Kurtosis:                       2.856   Cond. No.                     2.14e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors are robust to cluster correlation (cluster)
+[2] The condition number is large, 2.14e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.

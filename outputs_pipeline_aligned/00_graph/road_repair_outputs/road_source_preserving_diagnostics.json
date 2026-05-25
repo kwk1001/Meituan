@@ -1,0 +1,77 @@
+{
+  "config": {
+    "input_shp": "/Users/kwk1001/Desktop/Meituan/baoding/保定数据/Road.shp",
+    "output_graphml": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/00_graph/baoding_aligned.graphml",
+    "bbox_wgs84": [
+      115.37,
+      38.8,
+      115.61,
+      38.95
+    ],
+    "endpoint_snap_tol_m": 5.0,
+    "coord_round": 3,
+    "add_reverse_edges": true,
+    "road_class_col_used": "EN_Class",
+    "min_split_segment_length_m": 0.2,
+    "resolve_duplicate_geometries": true
+  },
+  "before": {
+    "node_count": 48828,
+    "edge_count": 53258,
+    "component_count": 4618,
+    "largest_component_nodes": 26311,
+    "largest_component_ratio": 0.5388506594576882
+  },
+  "after_endpoint_snap": {
+    "node_count": 48158,
+    "edge_count": 52588,
+    "component_count": 4560,
+    "largest_component_nodes": 26047,
+    "largest_component_ratio": 0.5408654844470285
+  },
+  "endpoint_snap_detail": {
+    "endpoint_count": 108348,
+    "clusters_total": 48167,
+    "clusters_multi": 27562,
+    "snapped_endpoint_count": 24,
+    "dropped_line_count_after_snap": 520
+  },
+  "after_source_preserving_split": {
+    "node_count": 50419,
+    "edge_count": 68077,
+    "component_count": 48,
+    "largest_component_nodes": 50282,
+    "largest_component_ratio": 0.9972827703841806
+  },
+  "counts": {
+    "input_roads_after_clean_clip": 54174,
+    "roads_after_snap": 53654,
+    "repaired_segments": 69115,
+    "graph_nodes": 50419,
+    "graph_edges_directed": 137694
+  },
+  "road_class_distribution_before_repair": {
+    "levelFourRoad": 44551,
+    "levelThreeRoad": 5806,
+    "secondaryRoad": 2389,
+    "nationalRoad": 694,
+    "provincialRoad": 604,
+    "overPass": 126,
+    "underPass": 4
+  },
+  "road_class_distribution_after_split": {
+    "levelFourRoad": 47407,
+    "levelThreeRoad": 12580,
+    "secondaryRoad": 5474,
+    "nationalRoad": 1834,
+    "provincialRoad": 1662,
+    "overPass": 154,
+    "underPass": 4
+  },
+  "outputs": {
+    "source_preserving_segments_gpkg": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/00_graph/road_repair_outputs/Road_source_preserving_segments.gpkg",
+    "split_diagnostics_csv": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/00_graph/road_repair_outputs/Road_source_preserving_split_diagnostics.csv",
+    "duplicate_resolution_csv": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/00_graph/road_repair_outputs/Road_duplicate_segment_resolution.csv",
+    "graphml": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/00_graph/baoding_aligned.graphml"
+  }
+}

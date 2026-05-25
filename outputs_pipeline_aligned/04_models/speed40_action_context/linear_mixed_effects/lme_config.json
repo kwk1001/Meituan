@@ -1,0 +1,40 @@
+{
+  "run_name": "speed40_action_context",
+  "primary_group_col": "courier_id",
+  "additional_group_cols": [],
+  "additional_group_specs": [],
+  "random_slope_vars": [],
+  "reml": false,
+  "method_sequence": [
+    "lbfgs",
+    "powell"
+  ],
+  "method_used": "lbfgs",
+  "maxiter": 500,
+  "max_rows": null,
+  "min_primary_group_size": 2,
+  "max_fixed_effects": null,
+  "diagnostics": {
+    "n_rows_before_dropna": 451849,
+    "n_rows_after_dropna": 451849,
+    "n_rows_after_group_filter_and_sample": 451818,
+    "n_primary_groups": 4579,
+    "min_primary_group_size": 2,
+    "median_primary_group_size": 82.0,
+    "max_primary_group_size": 417,
+    "n_fixed_effects": 20,
+    "dropped_constant_columns": [],
+    "dropped_exact_alias_columns": [],
+    "dropped_width_limit_columns": [],
+    "vc_sources": [],
+    "y_col": "speed_kmh"
+  },
+  "outputs": {
+    "fixed_effects_csv": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/04_models/speed40_action_context/linear_mixed_effects/lme_fixed_effects.csv",
+    "fit_info_csv": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/04_models/speed40_action_context/linear_mixed_effects/lme_fit_info.csv",
+    "variance_components_csv": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/04_models/speed40_action_context/linear_mixed_effects/lme_variance_components.csv",
+    "random_effects_csv": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/04_models/speed40_action_context/linear_mixed_effects/lme_random_effects_by_group.csv",
+    "design_map_csv": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/04_models/speed40_action_context/linear_mixed_effects/lme_design_column_map.csv",
+    "summary_txt": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/04_models/speed40_action_context/linear_mixed_effects/lme_summary.txt"
+  }
+}

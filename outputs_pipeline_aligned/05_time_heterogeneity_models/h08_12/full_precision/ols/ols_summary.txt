@@ -1,0 +1,43 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              speed_kmh   R-squared:                       0.198
+Model:                            OLS   Adj. R-squared:                  0.198
+Method:                 Least Squares   F-statistic:                     928.3
+Date:                Sat, 23 May 2026   Prob (F-statistic):               0.00
+Time:                        23:01:15   Log-Likelihood:            -2.5540e+05
+No. Observations:               89140   AIC:                         5.108e+05
+Df Residuals:                   89122   BIC:                         5.110e+05
+Df Model:                          17                                         
+Covariance Type:              cluster                                         
+==============================================================================================================
+                                                 coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------------------
+const                                         11.2633      0.222     50.847      0.000      10.829      11.697
+onhand_order_count_start                       0.2282      0.014     16.249      0.000       0.201       0.256
+time_pressure_min                             -0.0020      0.002     -1.112      0.266      -0.006       0.002
+is_weekend_local                               0.0393      0.033      1.199      0.231      -0.025       0.104
+rider_avg_orders_per_active_day                0.0443      0.002     18.170      0.000       0.039       0.049
+full_time                                     -0.0513      0.048     -1.079      0.280      -0.144       0.042
+div1000_rider_mean_segment_distance_m          1.7598      0.054     32.632      0.000       1.654       1.866
+road_class_share_levelThreeRoad_lenw_mean      0.6707      0.084      7.989      0.000       0.506       0.835
+road_class_share_secondaryRoad_lenw_mean       1.3578      0.091     14.884      0.000       1.179       1.537
+road_class_share_nationalRoad_lenw_mean        1.4042      0.222      6.328      0.000       0.969       1.839
+road_class_share_provincialRoad_lenw_mean      1.3982      0.138     10.160      0.000       1.128       1.668
+curvature_deg_per_m_lenw_mean                 -3.6668      0.152    -24.091      0.000      -3.965      -3.369
+intersection_density_per_km_300m_lenw_mean    -0.5169      0.016    -33.195      0.000      -0.547      -0.486
+betweenness_log1p_z_mean_end_lenw_mean         2.4081      0.054     44.635      0.000       2.302       2.514
+closeness_per_km_z_mean_end_lenw_mean         -2.4727      0.106    -23.239      0.000      -2.681      -2.264
+ln1p_poi_count_30m_lenw_mean                   0.1492      0.125      1.191      0.234      -0.096       0.395
+poi_mix_entropy_norm_30m_lenw_mean             1.7412      0.881      1.975      0.048       0.014       3.469
+segment_task_orientation_to_fetch             -2.1279      0.045    -47.206      0.000      -2.216      -2.040
+==============================================================================
+Omnibus:                     4914.476   Durbin-Watson:                   1.926
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             6079.973
+Skew:                           0.559   Prob(JB):                         0.00
+Kurtosis:                       3.621   Cond. No.                     2.12e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors are robust to cluster correlation (cluster)
+[2] The condition number is large, 2.12e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.

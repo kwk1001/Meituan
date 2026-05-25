@@ -1,0 +1,45 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              speed_kmh   R-squared:                       0.181
+Model:                            OLS   Adj. R-squared:                  0.181
+Method:                 Least Squares   F-statistic:                     1982.
+Date:                Sat, 23 May 2026   Prob (F-statistic):               0.00
+Time:                        17:13:57   Log-Likelihood:            -1.3031e+06
+No. Observations:              451849   AIC:                         2.606e+06
+Df Residuals:                  451829   BIC:                         2.606e+06
+Df Model:                          19                                         
+Covariance Type:              cluster                                         
+==============================================================================================================
+                                                 coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------------------
+const                                         11.5023      0.139     82.840      0.000      11.230      11.774
+ln1p_restaurant_shp_count_30m_lenw_mean       -0.5120      0.016    -31.531      0.000      -0.544      -0.480
+onhand_order_count_start                       0.2416      0.010     24.019      0.000       0.222       0.261
+time_pressure_min                             -0.0297      0.001    -32.300      0.000      -0.032      -0.028
+is_weekend_local                               0.0033      0.017      0.195      0.846      -0.030       0.037
+time_midday_peak_10_14                        -0.3978      0.024    -16.869      0.000      -0.444      -0.352
+time_evening_peak_16_20                       -1.0033      0.023    -44.526      0.000      -1.047      -0.959
+time_midnight_2_6                              2.3588      0.109     21.554      0.000       2.144       2.573
+rider_avg_orders_per_active_day                0.0408      0.002     23.881      0.000       0.037       0.044
+div1000_rider_mean_segment_distance_m          1.9247      0.043     45.210      0.000       1.841       2.008
+road_class_share_levelThreeRoad_lenw_mean      1.0556      0.045     23.608      0.000       0.968       1.143
+road_class_share_secondaryRoad_lenw_mean       1.6124      0.049     33.033      0.000       1.517       1.708
+road_class_share_nationalRoad_lenw_mean        1.3466      0.120     11.257      0.000       1.112       1.581
+road_class_share_provincialRoad_lenw_mean      1.4390      0.077     18.638      0.000       1.288       1.590
+curvature_deg_per_m_lenw_mean                 -3.8939      0.074    -52.724      0.000      -4.039      -3.749
+intersection_density_per_km_300m_lenw_mean    -0.5130      0.009    -59.737      0.000      -0.530      -0.496
+betweenness_log1p_z_mean_end_lenw_mean         2.8542      0.030     94.877      0.000       2.795       2.913
+closeness_per_km_z_mean_end_lenw_mean         -2.2883      0.069    -33.224      0.000      -2.423      -2.153
+ln1p_poi_count_30m_lenw_mean                   0.8953      0.062     14.408      0.000       0.774       1.017
+poi_mix_entropy_norm_30m_lenw_mean            -1.8124      0.426     -4.252      0.000      -2.648      -0.977
+==============================================================================
+Omnibus:                    18459.034   Durbin-Watson:                   1.900
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            21369.340
+Skew:                           0.486   Prob(JB):                         0.00
+Kurtosis:                       3.435   Cond. No.                     2.15e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors are robust to cluster correlation (cluster)
+[2] The condition number is large, 2.15e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.

@@ -1,0 +1,115 @@
+{
+  "run_name": "h12_16",
+  "trip_table_path": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/02_variables/segments/segment_model_table.csv.gz",
+  "base_output_root": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/05_time_heterogeneity_models",
+  "output_root": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/05_time_heterogeneity_models/h12_16",
+  "full_precision_dir": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/05_time_heterogeneity_models/h12_16/full_precision",
+  "rounded_dir": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/05_time_heterogeneity_models/h12_16/rounded",
+  "y_col": "speed_kmh",
+  "y_transform": "raw",
+  "row_query": "speed_kmh <= 40 and start_hour_local >= 12 and start_hour_local < 16",
+  "cluster_col": "courier_id",
+  "run_multiple_model_specs": true,
+  "primary_run_name": "h00_04",
+  "model_run_specs": {
+    "h00_04": "speed_kmh <= 40 and start_hour_local >= 0 and start_hour_local < 4",
+    "h04_08": "speed_kmh <= 40 and start_hour_local >= 4 and start_hour_local < 8",
+    "h08_12": "speed_kmh <= 40 and start_hour_local >= 8 and start_hour_local < 12",
+    "h12_16": "speed_kmh <= 40 and start_hour_local >= 12 and start_hour_local < 16",
+    "h16_20": "speed_kmh <= 40 and start_hour_local >= 16 and start_hour_local < 20",
+    "h20_24": "speed_kmh <= 40 and start_hour_local >= 20 and start_hour_local < 24"
+  },
+  "x_groups": {
+    "trip_state": [
+      "onhand_order_count_start",
+      "time_pressure_min",
+      "is_weekend_local"
+    ],
+    "time_window": [],
+    "rider_behavior": [
+      "rider_avg_orders_per_active_day",
+      "full_time",
+      "rider_mean_segment_distance_m"
+    ],
+    "road_class_shares": [
+      "road_class_share_levelFourRoad_lenw_mean",
+      "road_class_share_levelThreeRoad_lenw_mean",
+      "road_class_share_secondaryRoad_lenw_mean",
+      "road_class_share_nationalRoad_lenw_mean",
+      "road_class_share_provincialRoad_lenw_mean"
+    ],
+    "road_topology_geometry": [
+      "curvature_deg_per_m_lenw_mean",
+      "intersection_density_per_km_300m_lenw_mean",
+      "betweenness_log1p_z_mean_end_lenw_mean",
+      "closeness_per_km_z_mean_end_lenw_mean"
+    ],
+    "landuse": [
+      "poi_count_30m_lenw_mean",
+      "poi_mix_entropy_norm_30m_lenw_mean"
+    ]
+  },
+  "x_extra": [],
+  "x_drop": [],
+  "categorical_vars": [
+    "segment_task_orientation"
+  ],
+  "derived_variable_specs": {
+    "time_midday_peak_10_14": {
+      "type": "indicator",
+      "condition": "(start_hour_local >= 10) & (start_hour_local < 14)",
+      "categorical": false
+    },
+    "time_evening_peak_16_20": {
+      "type": "indicator",
+      "condition": "(start_hour_local >= 16) & (start_hour_local < 20)",
+      "categorical": false
+    },
+    "time_midnight_2_6": {
+      "type": "indicator",
+      "condition": "(start_hour_local >= 2) & (start_hour_local < 6)",
+      "categorical": false
+    },
+    "full_time": {
+      "type": "indicator",
+      "condition": "(rider_active_day_share_in_data == 1)",
+      "categorical": false
+    }
+  },
+  "add_interactions": false,
+  "interaction_specs": [],
+  "drop_mechanical_x_when_y_is_speed": false,
+  "mechanical_x_when_y_speed": [],
+  "drop_one_road_class_reference": true,
+  "road_class_reference_mode": "preference_then_largest",
+  "road_class_reference_used": "road_class_share_levelFourRoad_lenw_mean",
+  "variable_transforms": {
+    "poi_count_30m_lenw_mean": "log1p",
+    "restaurant_shp_count_30m_lenw_mean": "log1p",
+    "rider_mean_segment_distance_m": "div:1000"
+  },
+  "pattern_variable_transforms": {},
+  "auto_apply_recommended_transforms": false,
+  "alias_keep_preference_raw": [
+    "poi_count_restaurant_30m_lenw_mean",
+    "restaurant_shp_count_30m_lenw_mean"
+  ],
+  "auto_drop_high_vif": false,
+  "vif_threshold": 10.0,
+  "vif_max_rows": 100000,
+  "vif_driver_max_rows": 100000,
+  "run_ols": true,
+  "run_xgboost_shap": false,
+  "xgb_params": {
+    "n_estimators": 500,
+    "max_depth": 4,
+    "learning_rate": 0.04,
+    "subsample": 0.85,
+    "colsample_bytree": 0.85,
+    "reg_lambda": 1.0,
+    "min_child_weight": 5,
+    "objective": "reg:squarederror",
+    "random_state": 42,
+    "n_jobs": -1
+  }
+}

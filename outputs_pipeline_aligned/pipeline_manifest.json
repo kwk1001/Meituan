@@ -1,0 +1,46 @@
+{
+  "project_root": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan",
+  "pipeline_root": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned",
+  "data_dir": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\dataset",
+  "baoding_dir": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\baoding",
+  "road_shp": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\baoding\\保定数据\\Road.shp",
+  "graph_file": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\00_graph\\baoding_aligned.graphml",
+  "raw_segment_dir": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\01_raw_segments",
+  "variable_root": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\02_variables",
+  "diagnostic_map_root": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\03_diagnostics_maps",
+  "model_root": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\04_models",
+  "poi_input": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\baoding\\保定数据\\POI_保定.shp",
+  "restaurant_input": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\baoding\\保定数据\\大众点评餐馆_保定.shp",
+  "raw_file_fingerprints": {
+    "all_waybill_info": {
+      "path": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\dataset\\all_waybill_info.csv",
+      "size_bytes": 121698401,
+      "mtime": 1778305875.4232512,
+      "md5": "2ec71ba7efe1467815c139c7cc5af03a"
+    },
+    "courier_wave_info": {
+      "path": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\dataset\\courier_wave_info.csv",
+      "size_bytes": 12713132,
+      "mtime": 1778305875.4232512,
+      "md5": "da23c188d094f75acd15ee36c897f0ec"
+    },
+    "dispatch_rider": {
+      "path": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\dataset\\dispatch_rider.csv",
+      "size_bytes": 4218198,
+      "mtime": 1778305875.4237626,
+      "md5": "3d719442ee71cdabb38dcc6cf0db6412"
+    },
+    "dispatch_waybill": {
+      "path": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\dataset\\dispatch_waybill.csv",
+      "size_bytes": 510861,
+      "mtime": 1778305875.4237626,
+      "md5": "fc44338657c2a92db54bb2041a5ed050"
+    }
+  },
+  "road_shp_fingerprint": {
+    "path": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\baoding\\保定数据\\Road.shp",
+    "size_bytes": 58551396,
+    "mtime": 1777220282.7801285,
+    "md5": "dfe0753c6b6e7bb56da026eb6a9cd4ba"
+  }
+}

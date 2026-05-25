@@ -1,0 +1,25 @@
+{
+  "stage": "01_rebuild_graph_and_segments",
+  "graph_file": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/00_graph/baoding_aligned.graphml",
+  "graph_fingerprint": {
+    "path": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/00_graph/baoding_aligned.graphml",
+    "size_bytes": 140710474,
+    "mtime": 1779087627.9865012,
+    "md5": "5c39e58646ac275b40a6b104dd9c933b"
+  },
+  "road_shp": "/Users/kwk1001/Desktop/Meituan/baoding/保定数据/Road.shp",
+  "road_shp_fingerprint": {
+    "path": "/Users/kwk1001/Desktop/Meituan/baoding/保定数据/Road.shp",
+    "size_bytes": 58551396,
+    "mtime": 1777220284.0,
+    "md5": "dfe0753c6b6e7bb56da026eb6a9cd4ba"
+  },
+  "movement_routes_csv": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/01_raw_segments/courier_movements_midpoint_routes.csv",
+  "route_distance_csv": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/01_raw_segments/courier_final_distances_midpoint_routes_virtual_edge.csv",
+  "segment_distance_csv": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/01_raw_segments/courier_final_distances_segments_virtual_edge.csv",
+  "filtered_segment_csv": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/01_raw_segments/courier_final_distances_filtered.csv",
+  "filter_stage_summary_csv": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/01_raw_segments/filter_stage_summary.csv",
+  "output_dir": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/01_raw_segments",
+  "resume_from_existing": false,
+  "force_recalculate_route_distances": true
+}

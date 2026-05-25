@@ -1,0 +1,44 @@
+{
+  "buffer_m": 30.0,
+  "target_crs": "EPSG:32650",
+  "n_conedges": 65287,
+  "poi_input": "/Users/kwk1001/Desktop/Meituan/baoding/保定数据/POI_保定.shp",
+  "restaurant_input": "/Users/kwk1001/Desktop/Meituan/baoding/保定数据/大众点评餐馆_保定.shp",
+  "conedge_bounds": [
+    358470.91731994867,
+    4295503.3815561775,
+    379549.0380536963,
+    4312484.506589444
+  ],
+  "poi_type_col": "type",
+  "poi_rows_after_bbox": 3594,
+  "restaurant_rows_after_bbox": 17615,
+  "landuse_rows": 65287,
+  "poi_count_30m": {
+    "sum": 9578.0,
+    "max": 13.0,
+    "mean": 0.14670608237474536,
+    "positive_conedge_count": 6955,
+    "positive_conedge_share": 0.10652963070749154,
+    "non_null": 65287
+  },
+  "poi_count_restaurant_30m": {
+    "sum": 0.0,
+    "max": 0.0,
+    "mean": 0.0,
+    "positive_conedge_count": 0,
+    "positive_conedge_share": 0.0,
+    "non_null": 65287
+  },
+  "restaurant_shp_count_30m": {
+    "sum": 69718.0,
+    "max": 95.0,
+    "mean": 1.0678695605557003,
+    "positive_conedge_count": 14592,
+    "positive_conedge_share": 0.22350544518816917,
+    "non_null": 65287
+  },
+  "category_profile_dir": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/02_variables/landuse/landuse_category_profiles",
+  "category_profile_index": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/02_variables/landuse/landuse_category_profiles/all_shapefile_category_field_index.csv",
+  "category_profiled_field_count": 24
+}

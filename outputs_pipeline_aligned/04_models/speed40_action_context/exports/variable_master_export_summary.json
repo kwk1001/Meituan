@@ -1,0 +1,15 @@
+{
+  "run_name": "speed40_action_context",
+  "y_col": "speed_kmh",
+  "y_model_col": "speed_kmh",
+  "all_rows_csv": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/04_models/speed40_action_context/exports/variable_master_table_all_rows.csv",
+  "model_rows_csv": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/04_models/speed40_action_context/exports/variable_master_table_model_rows.csv",
+  "column_catalog_csv": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/04_models/speed40_action_context/exports/variable_master_column_catalog.csv",
+  "n_rows_all": 451849,
+  "n_rows_model_sample": 451849,
+  "n_columns_master": 157,
+  "n_x_raw": 19,
+  "n_x_model": 19,
+  "n_categorical_controls": 1,
+  "export_all_available_columns": true
+}
