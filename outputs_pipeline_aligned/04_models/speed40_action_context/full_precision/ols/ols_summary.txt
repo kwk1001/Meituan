@@ -2,45 +2,46 @@
 ==============================================================================
 Dep. Variable:              speed_kmh   R-squared:                       0.207
 Model:                            OLS   Adj. R-squared:                  0.207
-Method:                 Least Squares   F-statistic:                     2013.
-Date:                Sat, 23 May 2026   Prob (F-statistic):               0.00
-Time:                        22:12:33   Log-Likelihood:            -1.2960e+06
+Method:                 Least Squares   F-statistic:                     1912.
+Date:                Mon, 25 May 2026   Prob (F-statistic):               0.00
+Time:                        00:13:11   Log-Likelihood:            -1.2959e+06
 No. Observations:              451849   AIC:                         2.592e+06
-Df Residuals:                  451828   BIC:                         2.592e+06
-Df Model:                          20                                         
+Df Residuals:                  451827   BIC:                         2.592e+06
+Df Model:                          21                                         
 Covariance Type:              cluster                                         
 ==============================================================================================================
                                                  coef    std err          z      P>|z|      [0.025      0.975]
 --------------------------------------------------------------------------------------------------------------
-const                                         11.1093      0.139     80.159      0.000      10.838      11.381
-onhand_order_count_start                       0.2896      0.010     29.406      0.000       0.270       0.309
-time_pressure_min                              0.0053      0.001      5.321      0.000       0.003       0.007
-is_weekend_local                               0.0339      0.017      1.992      0.046       0.001       0.067
-time_midday_peak_10_14                        -0.4157      0.024    -17.575      0.000      -0.462      -0.369
-time_evening_peak_16_20                       -0.9745      0.023    -43.200      0.000      -1.019      -0.930
-time_midnight_2_6                              2.4144      0.111     21.687      0.000       2.196       2.633
-rider_avg_orders_per_active_day                0.0417      0.002     22.972      0.000       0.038       0.045
-full_time                                     -0.0280      0.036     -0.782      0.434      -0.098       0.042
-div1000_rider_mean_segment_distance_m          1.8232      0.043     42.698      0.000       1.740       1.907
-road_class_share_levelThreeRoad_lenw_mean      0.8334      0.042     19.908      0.000       0.751       0.915
-road_class_share_secondaryRoad_lenw_mean       1.5684      0.048     32.883      0.000       1.475       1.662
-road_class_share_nationalRoad_lenw_mean        1.3883      0.120     11.610      0.000       1.154       1.623
-road_class_share_provincialRoad_lenw_mean      1.4155      0.075     18.908      0.000       1.269       1.562
-curvature_deg_per_m_lenw_mean                 -3.7803      0.073    -51.836      0.000      -3.923      -3.637
-intersection_density_per_km_300m_lenw_mean    -0.5135      0.009    -59.637      0.000      -0.530      -0.497
-betweenness_log1p_z_mean_end_lenw_mean         2.5570      0.029     88.341      0.000       2.500       2.614
-closeness_per_km_z_mean_end_lenw_mean         -2.3908      0.065    -36.524      0.000      -2.519      -2.262
-ln1p_poi_count_30m_lenw_mean                   0.5900      0.062      9.557      0.000       0.469       0.711
-poi_mix_entropy_norm_30m_lenw_mean            -1.0520      0.414     -2.538      0.011      -1.864      -0.240
-segment_task_orientation_to_fetch             -2.0294      0.030    -67.047      0.000      -2.089      -1.970
+const                                         11.0916      0.139     79.902      0.000      10.820      11.364
+onhand_order_count_start                       0.2966      0.010     29.991      0.000       0.277       0.316
+time_pressure_min                              0.0067      0.001      6.317      0.000       0.005       0.009
+time_pressure_late                             0.2404      0.056      4.298      0.000       0.131       0.350
+is_weekend_local                               0.0311      0.017      1.826      0.068      -0.002       0.064
+time_midday_peak_10_14                        -0.4190      0.024    -17.727      0.000      -0.465      -0.373
+time_evening_peak_16_20                       -0.9809      0.023    -43.469      0.000      -1.025      -0.937
+time_midnight_2_6                              2.4172      0.111     21.745      0.000       2.199       2.635
+rider_avg_orders_per_active_day                0.0419      0.002     23.150      0.000       0.038       0.045
+full_time                                     -0.0284      0.036     -0.795      0.427      -0.098       0.042
+div1000_rider_mean_segment_distance_m          1.8110      0.043     42.513      0.000       1.728       1.895
+road_class_share_levelThreeRoad_lenw_mean      0.8621      0.042     20.664      0.000       0.780       0.944
+road_class_share_secondaryRoad_lenw_mean       1.5721      0.048     32.847      0.000       1.478       1.666
+road_class_share_nationalRoad_lenw_mean        1.5306      0.120     12.739      0.000       1.295       1.766
+road_class_share_provincialRoad_lenw_mean      1.4067      0.074     18.969      0.000       1.261       1.552
+curvature_deg_per_m_lenw_mean                 -3.7456      0.073    -51.452      0.000      -3.888      -3.603
+intersection_density_per_km_300m_lenw_mean    -0.5101      0.009    -59.195      0.000      -0.527      -0.493
+betweenness_log1p_z_mean_end_lenw_mean         2.5501      0.029     88.070      0.000       2.493       2.607
+closeness_per_km_z_mean_end_lenw_mean         -2.0498      0.068    -30.213      0.000      -2.183      -1.917
+ln1p_poi_count_30m_lenw_mean                   0.3571      0.064      5.601      0.000       0.232       0.482
+poi_mix_entropy_norm_30m_lenw_mean            -4.7680      0.323    -14.770      0.000      -5.401      -4.135
+segment_task_orientation_to_fetch             -2.0313      0.030    -66.623      0.000      -2.091      -1.972
 ==============================================================================
-Omnibus:                    25927.150   Durbin-Watson:                   1.869
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):            32118.331
-Skew:                           0.576   Prob(JB):                         0.00
-Kurtosis:                       3.617   Cond. No.                     2.15e+03
+Omnibus:                    25928.936   Durbin-Watson:                   1.869
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            32131.259
+Skew:                           0.575   Prob(JB):                         0.00
+Kurtosis:                       3.618   Cond. No.                     1.64e+03
 ==============================================================================
 
 Notes:
 [1] Standard Errors are robust to cluster correlation (cluster)
-[2] The condition number is large, 2.15e+03. This might indicate that there are
+[2] The condition number is large, 1.64e+03. This might indicate that there are
 strong multicollinearity or other numerical problems.

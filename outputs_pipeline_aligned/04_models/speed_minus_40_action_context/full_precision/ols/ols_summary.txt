@@ -1,0 +1,46 @@
+                                 OLS Regression Results                                 
+========================================================================================
+Dep. Variable:     speed_kmh_minus_service_time   R-squared:                       0.133
+Model:                                      OLS   Adj. R-squared:                  0.133
+Method:                           Least Squares   F-statistic:                     1318.
+Date:                          Sun, 24 May 2026   Prob (F-statistic):               0.00
+Time:                                  23:39:13   Log-Likelihood:            -1.4983e+06
+No. Observations:                        442878   AIC:                         2.997e+06
+Df Residuals:                            442857   BIC:                         2.997e+06
+Df Model:                                    20                                         
+Covariance Type:                        cluster                                         
+==============================================================================================================
+                                                 coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------------------
+const                                         17.1350      0.227     75.498      0.000      16.690      17.580
+onhand_order_count_start                       0.7588      0.017     44.900      0.000       0.726       0.792
+time_pressure_min                             -0.0718      0.002    -36.860      0.000      -0.076      -0.068
+is_weekend_local                               0.0489      0.029      1.703      0.089      -0.007       0.105
+time_midday_peak_10_14                        -0.2676      0.038     -7.047      0.000      -0.342      -0.193
+time_evening_peak_16_20                       -1.3719      0.036    -37.701      0.000      -1.443      -1.301
+time_midnight_2_6                              3.1198      0.164     18.973      0.000       2.798       3.442
+rider_avg_orders_per_active_day                0.0791      0.003     24.533      0.000       0.073       0.085
+full_time                                     -0.0421      0.063     -0.664      0.507      -0.166       0.082
+div1000_rider_mean_segment_distance_m          1.8819      0.069     27.459      0.000       1.748       2.016
+road_class_share_levelThreeRoad_lenw_mean      1.3464      0.069     19.536      0.000       1.211       1.481
+road_class_share_secondaryRoad_lenw_mean       1.8680      0.077     24.181      0.000       1.717       2.019
+road_class_share_nationalRoad_lenw_mean        1.5929      0.183      8.705      0.000       1.234       1.952
+road_class_share_provincialRoad_lenw_mean      1.2447      0.124     10.015      0.000       1.001       1.488
+curvature_deg_per_m_lenw_mean                 -4.2979      0.128    -33.598      0.000      -4.549      -4.047
+intersection_density_per_km_300m_lenw_mean    -0.5439      0.014    -39.791      0.000      -0.571      -0.517
+betweenness_log1p_z_mean_end_lenw_mean         2.4121      0.047     51.725      0.000       2.321       2.503
+closeness_per_km_z_mean_end_lenw_mean         -2.0476      0.110    -18.585      0.000      -2.263      -1.832
+ln1p_poi_count_30m_lenw_mean                   0.1371      0.105      1.304      0.192      -0.069       0.343
+poi_mix_entropy_norm_30m_lenw_mean            -3.6277      0.550     -6.600      0.000      -4.705      -2.550
+segment_task_orientation_to_fetch             -2.7688      0.051    -54.230      0.000      -2.869      -2.669
+==============================================================================
+Omnibus:                    24776.841   Durbin-Watson:                   1.864
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            29172.276
+Skew:                           0.626   Prob(JB):                         0.00
+Kurtosis:                       3.109   Cond. No.                     1.64e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors are robust to cluster correlation (cluster)
+[2] The condition number is large, 1.64e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.

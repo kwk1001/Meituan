@@ -42,5 +42,20 @@
     "size_bytes": 58551396,
     "mtime": 1777220282.7801285,
     "md5": "dfe0753c6b6e7bb56da026eb6a9cd4ba"
-  }
+  },
+  "segment_model_csv_gz": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\02_variables\\segments\\segment_model_table.csv.gz",
+  "variable_stage_manifest": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\02_variables\\variable_stage_manifest.json",
+  "variable_stage_graph_fingerprint": {
+    "path": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\00_graph\\baoding_aligned.graphml",
+    "size_bytes": 140710474,
+    "mtime": 1779087627.9865012,
+    "md5": "5c39e58646ac275b40a6b104dd9c933b"
+  },
+  "segment_model_fingerprint": {
+    "path": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\02_variables\\segments\\segment_model_table.csv.gz",
+    "bytes": 317611311,
+    "md5": "0bbd0b400630ecef00a3bca5b3800714"
+  },
+  "service_time_deduction_sec": 180,
+  "service_time_deduction_rule": "endpoint_based_grab_zero_half_for_one_grab"
 }

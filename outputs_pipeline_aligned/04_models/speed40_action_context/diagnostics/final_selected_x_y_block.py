@@ -5,6 +5,7 @@ ROW_QUERY = 'speed_kmh <= 40'
 X_SELECTED_RAW = [
     'onhand_order_count_start',
     'time_pressure_min',
+    'time_pressure_late',
     'is_weekend_local',
     'time_midday_peak_10_14',
     'time_evening_peak_16_20',
@@ -27,6 +28,7 @@ X_SELECTED_RAW = [
 X_SELECTED_MODEL = [
     'onhand_order_count_start',
     'time_pressure_min',
+    'time_pressure_late',
     'is_weekend_local',
     'time_midday_peak_10_14',
     'time_evening_peak_16_20',

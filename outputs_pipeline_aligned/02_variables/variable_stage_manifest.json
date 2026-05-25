@@ -1,26 +1,26 @@
 {
   "stage": "02_build_variables_aligned",
-  "segment_model_csv_gz": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/02_variables/segments/segment_model_table.csv.gz",
-  "segment_model_csv": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/02_variables/segments/segment_model_table.csv",
-  "variable_dictionary_csv": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/02_variables/segments/variable_dictionary.csv",
-  "vif_csv": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/02_variables/diagnostics/vif_table.csv",
-  "path_info_json": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/02_variables/effective_paths.json",
-  "graphml_path": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/00_graph/baoding_aligned.graphml",
-  "input_segment_csv": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/01_raw_segments/courier_final_distances_filtered.csv",
-  "output_root": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/02_variables",
+  "segment_model_csv_gz": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\02_variables\\segments\\segment_model_table.csv.gz",
+  "segment_model_csv": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\02_variables\\segments\\segment_model_table.csv",
+  "variable_dictionary_csv": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\02_variables\\segments\\variable_dictionary.csv",
+  "vif_csv": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\02_variables\\diagnostics\\vif_table.csv",
+  "path_info_json": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\02_variables\\effective_paths.json",
+  "graphml_path": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\00_graph\\baoding_aligned.graphml",
+  "input_segment_csv": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\01_raw_segments\\courier_final_distances_filtered.csv",
+  "output_root": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\02_variables",
   "graph_fingerprint": {
-    "path": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/00_graph/baoding_aligned.graphml",
+    "path": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\00_graph\\baoding_aligned.graphml",
     "size_bytes": 140710474,
     "mtime": 1779087627.9865012,
     "md5": "5c39e58646ac275b40a6b104dd9c933b"
   },
   "segment_model_fingerprint": {
-    "path": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/02_variables/segments/segment_model_table.csv.gz",
-    "size_bytes": 314444037,
-    "mtime": 1779582401.329916,
-    "md5": "677c7fbd3f075691f216e53282b1c80b"
+    "path": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\02_variables\\segments\\segment_model_table.csv.gz",
+    "bytes": 317611311,
+    "md5": "0bbd0b400630ecef00a3bca5b3800714"
   },
   "landuse_buffer_m": 30,
   "network_radius_m": 300,
-  "service_time_deduction_sec": 180
+  "service_time_deduction_sec": 180,
+  "service_time_deduction_rule": "endpoint_based_grab_zero_half_for_one_grab"
 }

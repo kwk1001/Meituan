@@ -1,0 +1,15 @@
+{
+  "run_name": "speed_minus_40_action_context",
+  "y_col": "speed_kmh_minus_service_time",
+  "y_model_col": "speed_kmh_minus_service_time",
+  "all_rows_csv": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\04_models\\speed_minus_40_action_context\\exports\\variable_master_table_all_rows.csv",
+  "model_rows_csv": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\04_models\\speed_minus_40_action_context\\exports\\variable_master_table_model_rows.csv",
+  "column_catalog_csv": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\04_models\\speed_minus_40_action_context\\exports\\variable_master_column_catalog.csv",
+  "n_rows_all": 442878,
+  "n_rows_model_sample": 442878,
+  "n_columns_master": 158,
+  "n_x_raw": 19,
+  "n_x_model": 19,
+  "n_categorical_controls": 1,
+  "export_all_available_columns": true
+}

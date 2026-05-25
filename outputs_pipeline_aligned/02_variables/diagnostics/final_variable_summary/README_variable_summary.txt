@@ -10,8 +10,8 @@ skewed_numeric_variables.csv: numeric variables with absolute skew >= 2.
 correlation_with_speed.csv: numeric variables ranked by correlation with speed_kmh when speed_kmh exists.
 
 Plots:
-/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/02_variables/diagnostics/final_variable_summary/plots/numeric_variable_distributions_page_01.png
-/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/02_variables/diagnostics/final_variable_summary/plots/numeric_variable_distributions_page_02.png
-/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/02_variables/diagnostics/final_variable_summary/plots/numeric_variable_distributions_page_03.png
-/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/02_variables/diagnostics/final_variable_summary/plots/numeric_variable_distributions_page_04.png
-/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/02_variables/diagnostics/final_variable_summary/plots/numeric_variable_distributions_page_05.png
+c:\Users\Kwk10\Desktop\2026 Spring\Meituan\outputs_pipeline_aligned\02_variables\diagnostics\final_variable_summary\plots\numeric_variable_distributions_page_01.png
+c:\Users\Kwk10\Desktop\2026 Spring\Meituan\outputs_pipeline_aligned\02_variables\diagnostics\final_variable_summary\plots\numeric_variable_distributions_page_02.png
+c:\Users\Kwk10\Desktop\2026 Spring\Meituan\outputs_pipeline_aligned\02_variables\diagnostics\final_variable_summary\plots\numeric_variable_distributions_page_03.png
+c:\Users\Kwk10\Desktop\2026 Spring\Meituan\outputs_pipeline_aligned\02_variables\diagnostics\final_variable_summary\plots\numeric_variable_distributions_page_04.png
+c:\Users\Kwk10\Desktop\2026 Spring\Meituan\outputs_pipeline_aligned\02_variables\diagnostics\final_variable_summary\plots\numeric_variable_distributions_page_05.png

@@ -1,0 +1,45 @@
+{
+  "run_name": "h16_20",
+  "primary_group_col": "courier_id",
+  "additional_group_cols": [],
+  "additional_group_specs": [],
+  "random_slope_vars": [],
+  "reml": false,
+  "method_sequence": [
+    "powell",
+    "lbfgs",
+    "cg"
+  ],
+  "method_used": "powell",
+  "reject_nonfinite_llf": true,
+  "reject_huge_fixed_effect_se": true,
+  "huge_fixed_effect_se_threshold": 100000.0,
+  "maxiter": 500,
+  "max_rows": null,
+  "min_primary_group_size": 2,
+  "max_fixed_effects": null,
+  "diagnostics": {
+    "n_rows_before_dropna": 149154,
+    "n_rows_after_dropna": 149154,
+    "n_rows_after_group_filter_and_sample": 149080,
+    "n_primary_groups": 3939,
+    "min_primary_group_size": 2,
+    "median_primary_group_size": 33.0,
+    "max_primary_group_size": 130,
+    "n_fixed_effects": 18,
+    "dropped_constant_columns": [],
+    "dropped_exact_alias_columns": [],
+    "dropped_width_limit_columns": [],
+    "vc_sources": [],
+    "y_col": "speed_kmh"
+  },
+  "outputs": {
+    "fixed_effects_csv": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\05_time_heterogeneity_models\\h16_20\\linear_mixed_effects\\lme_fixed_effects.csv",
+    "fixed_effects_pretty_csv": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\05_time_heterogeneity_models\\h16_20\\linear_mixed_effects\\lme_fixed_effects_pretty.csv",
+    "fit_info_csv": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\05_time_heterogeneity_models\\h16_20\\linear_mixed_effects\\lme_fit_info.csv",
+    "variance_components_csv": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\05_time_heterogeneity_models\\h16_20\\linear_mixed_effects\\lme_variance_components.csv",
+    "random_effects_csv": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\05_time_heterogeneity_models\\h16_20\\linear_mixed_effects\\lme_random_effects_by_group.csv",
+    "design_map_csv": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\05_time_heterogeneity_models\\h16_20\\linear_mixed_effects\\lme_design_column_map.csv",
+    "summary_txt": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\05_time_heterogeneity_models\\h16_20\\linear_mixed_effects\\lme_summary.txt"
+  }
+}

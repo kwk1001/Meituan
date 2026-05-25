@@ -1,28 +1,26 @@
 {
   "run_name": "h16_20",
-  "trip_table_path": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/02_variables/segments/segment_model_table.csv.gz",
-  "base_output_root": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/05_time_heterogeneity_models",
-  "output_root": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/05_time_heterogeneity_models/h16_20",
-  "full_precision_dir": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/05_time_heterogeneity_models/h16_20/full_precision",
-  "rounded_dir": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/05_time_heterogeneity_models/h16_20/rounded",
+  "trip_table_path": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\02_variables\\segments\\segment_model_table.csv.gz",
+  "base_output_root": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\05_time_heterogeneity_models",
+  "output_root": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\05_time_heterogeneity_models\\h16_20",
+  "full_precision_dir": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\05_time_heterogeneity_models\\h16_20\\full_precision",
+  "rounded_dir": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\05_time_heterogeneity_models\\h16_20\\rounded",
   "y_col": "speed_kmh",
   "y_transform": "raw",
   "row_query": "speed_kmh <= 40 and start_hour_local >= 16 and start_hour_local < 20",
   "cluster_col": "courier_id",
   "run_multiple_model_specs": true,
-  "primary_run_name": "h00_04",
+  "primary_run_name": "h02_06",
   "model_run_specs": {
-    "h00_04": "speed_kmh <= 40 and start_hour_local >= 0 and start_hour_local < 4",
-    "h04_08": "speed_kmh <= 40 and start_hour_local >= 4 and start_hour_local < 8",
-    "h08_12": "speed_kmh <= 40 and start_hour_local >= 8 and start_hour_local < 12",
-    "h12_16": "speed_kmh <= 40 and start_hour_local >= 12 and start_hour_local < 16",
-    "h16_20": "speed_kmh <= 40 and start_hour_local >= 16 and start_hour_local < 20",
-    "h20_24": "speed_kmh <= 40 and start_hour_local >= 20 and start_hour_local < 24"
+    "h02_06": "speed_kmh <= 40 and start_hour_local >= 2 and start_hour_local < 6",
+    "h10_14": "speed_kmh <= 40 and start_hour_local >= 10 and start_hour_local < 14",
+    "h16_20": "speed_kmh <= 40 and start_hour_local >= 16 and start_hour_local < 20"
   },
   "x_groups": {
     "trip_state": [
       "onhand_order_count_start",
       "time_pressure_min",
+      "time_pressure_late",
       "is_weekend_local"
     ],
     "time_window": [],
@@ -55,6 +53,11 @@
     "segment_task_orientation"
   ],
   "derived_variable_specs": {
+    "time_pressure_late": {
+      "type": "indicator",
+      "condition": "time_pressure_min < 0",
+      "categorical": false
+    },
     "time_midday_peak_10_14": {
       "type": "indicator",
       "condition": "(start_hour_local >= 10) & (start_hour_local < 14)",
@@ -99,7 +102,7 @@
   "vif_max_rows": 100000,
   "vif_driver_max_rows": 100000,
   "run_ols": true,
-  "run_xgboost_shap": false,
+  "run_xgboost_shap": true,
   "xgb_params": {
     "n_estimators": 500,
     "max_depth": 4,

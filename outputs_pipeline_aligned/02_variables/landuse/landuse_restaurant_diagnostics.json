@@ -2,8 +2,8 @@
   "buffer_m": 30.0,
   "target_crs": "EPSG:32650",
   "n_conedges": 65287,
-  "poi_input": "/Users/kwk1001/Desktop/Meituan/baoding/保定数据/POI_保定.shp",
-  "restaurant_input": "/Users/kwk1001/Desktop/Meituan/baoding/保定数据/大众点评餐馆_保定.shp",
+  "poi_input": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\baoding\\保定数据\\POI_保定.shp",
+  "restaurant_input": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\baoding\\保定数据\\大众点评餐馆_保定.shp",
   "conedge_bounds": [
     358470.91731994867,
     4295503.3815561775,
@@ -11,15 +11,15 @@
     4312484.506589444
   ],
   "poi_type_col": "type",
-  "poi_rows_after_bbox": 3594,
+  "poi_rows_after_bbox": 3575,
   "restaurant_rows_after_bbox": 17615,
   "landuse_rows": 65287,
   "poi_count_30m": {
-    "sum": 9578.0,
-    "max": 13.0,
-    "mean": 0.14670608237474536,
-    "positive_conedge_count": 6955,
-    "positive_conedge_share": 0.10652963070749154,
+    "sum": 14861.0,
+    "max": 12.0,
+    "mean": 0.22762571415442584,
+    "positive_conedge_count": 11210,
+    "positive_conedge_share": 0.17170340190236955,
     "non_null": 65287
   },
   "poi_count_restaurant_30m": {
@@ -38,7 +38,7 @@
     "positive_conedge_share": 0.22350544518816917,
     "non_null": 65287
   },
-  "category_profile_dir": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/02_variables/landuse/landuse_category_profiles",
-  "category_profile_index": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/02_variables/landuse/landuse_category_profiles/all_shapefile_category_field_index.csv",
-  "category_profiled_field_count": 24
+  "category_profile_dir": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\02_variables\\landuse\\landuse_category_profiles",
+  "category_profile_index": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\02_variables\\landuse\\landuse_category_profiles\\all_shapefile_category_field_index.csv",
+  "category_profiled_field_count": 10
 }

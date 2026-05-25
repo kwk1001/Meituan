@@ -6,10 +6,11 @@
   "random_slope_vars": [],
   "reml": false,
   "method_sequence": [
+    "powell",
     "lbfgs",
-    "powell"
+    "cg"
   ],
-  "method_used": "lbfgs",
+  "method_used": "powell",
   "maxiter": 500,
   "max_rows": null,
   "min_primary_group_size": 2,
@@ -22,7 +23,7 @@
     "min_primary_group_size": 2,
     "median_primary_group_size": 82.0,
     "max_primary_group_size": 417,
-    "n_fixed_effects": 20,
+    "n_fixed_effects": 21,
     "dropped_constant_columns": [],
     "dropped_exact_alias_columns": [],
     "dropped_width_limit_columns": [],
@@ -30,11 +31,12 @@
     "y_col": "speed_kmh"
   },
   "outputs": {
-    "fixed_effects_csv": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/04_models/speed40_action_context/linear_mixed_effects/lme_fixed_effects.csv",
-    "fit_info_csv": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/04_models/speed40_action_context/linear_mixed_effects/lme_fit_info.csv",
-    "variance_components_csv": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/04_models/speed40_action_context/linear_mixed_effects/lme_variance_components.csv",
-    "random_effects_csv": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/04_models/speed40_action_context/linear_mixed_effects/lme_random_effects_by_group.csv",
-    "design_map_csv": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/04_models/speed40_action_context/linear_mixed_effects/lme_design_column_map.csv",
-    "summary_txt": "/Users/kwk1001/Desktop/Meituan/outputs_pipeline_aligned/04_models/speed40_action_context/linear_mixed_effects/lme_summary.txt"
+    "fixed_effects_csv": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\04_models\\speed40_action_context\\linear_mixed_effects\\lme_fixed_effects.csv",
+    "fixed_effects_pretty_csv": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\04_models\\speed40_action_context\\linear_mixed_effects\\lme_fixed_effects_pretty.csv",
+    "fit_info_csv": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\04_models\\speed40_action_context\\linear_mixed_effects\\lme_fit_info.csv",
+    "variance_components_csv": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\04_models\\speed40_action_context\\linear_mixed_effects\\lme_variance_components.csv",
+    "random_effects_csv": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\04_models\\speed40_action_context\\linear_mixed_effects\\lme_random_effects_by_group.csv",
+    "design_map_csv": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\04_models\\speed40_action_context\\linear_mixed_effects\\lme_design_column_map.csv",
+    "summary_txt": "c:\\Users\\Kwk10\\Desktop\\2026 Spring\\Meituan\\outputs_pipeline_aligned\\04_models\\speed40_action_context\\linear_mixed_effects\\lme_summary.txt"
   }
 }
